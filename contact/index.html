@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#contact-me" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -334,6 +339,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -344,6 +362,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#send-me-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Send Me a Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ways-to-reach-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Ways to Reach Me
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -386,6 +441,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#send-me-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Send Me a Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-ways-to-reach-me" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Ways to Reach Me
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -400,15 +483,75 @@
                   
 
 
-  <h1>Contact</h1>
+<h1 id="contact-me">Contact Me<a class="headerlink" href="#contact-me" title="Permanent link"></a></h1>
+<p>I’d love to hear from you! Whether it’s a question, collaboration opportunity, or just a friendly hello, feel free to reach out.</p>
+<hr />
+<h2 id="send-me-a-message">Send Me a Message<a class="headerlink" href="#send-me-a-message" title="Permanent link"></a></h2>
+<div style="max-width:600px; margin:40px 0; background:#ffffff; padding:40px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1); font-family:Arial, sans-serif;">
 
+<form action="https://formspree.io/f/xwpnpeew" method="POST">
+
+  <!-- Name Input -->
+  <div style="position:relative; margin-bottom:20px;">
+    <input type="text" id="name" name="name" required placeholder=" " style="width:100%; padding:16px 16px 16px 16px; border:1px solid #ccc; border-radius:10px; outline:none; transition:0.3s;"/>
+    <label for="name" style="position:absolute; left:16px; top:16px; color:#888; transition:0.3s; pointer-events:none;">Your Name</label>
+  </div>
+
+  <!-- Email Input -->
+  <div style="position:relative; margin-bottom:20px;">
+    <input type="email" id="email" name="email" required placeholder=" " style="width:100%; padding:16px; border:1px solid #ccc; border-radius:10px; outline:none; transition:0.3s;"/>
+    <label for="email" style="position:absolute; left:16px; top:16px; color:#888; transition:0.3s; pointer-events:none;">Your Email</label>
+  </div>
+
+  <!-- Message Input -->
+  <div style="position:relative; margin-bottom:25px;">
+    <textarea id="message" name="message" rows="6" required placeholder=" " style="width:100%; padding:16px; border:1px solid #ccc; border-radius:10px; outline:none; transition:0.3s;"></textarea>
+    <label for="message" style="position:absolute; left:16px; top:16px; color:#888; transition:0.3s; pointer-events:none;">Your Message</label>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" style="width:100%; background-color:#007acc; color:white; padding:18px; border:none; border-radius:10px; cursor:pointer; font-size:16px; font-weight:bold; transition:0.3s; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+    Send Message
+  </button>
+</form>
+
+</div>
+
+<script>
+  // Floating labels effect
+  const inputs = document.querySelectorAll('input, textarea');
+  inputs.forEach(input => {
+    input.addEventListener('focus', () => {
+      input.nextElementSibling.style.top = '-10px';
+      input.nextElementSibling.style.fontSize = '12px';
+      input.nextElementSibling.style.color = '#007acc';
+    });
+    input.addEventListener('blur', () => {
+      if (input.value === '') {
+        input.nextElementSibling.style.top = '16px';
+        input.nextElementSibling.style.fontSize = '16px';
+        input.nextElementSibling.style.color = '#888';
+      }
+    });
+  });
+
+  // Button hover effect
+  const btn = document.querySelector('button[type="submit"]');
+  btn.addEventListener('mouseover', () => btn.style.backgroundColor = '#005f99');
+  btn.addEventListener('mouseout', () => btn.style.backgroundColor = '#007acc');
+</script>
+
+<hr />
+<h2 id="other-ways-to-reach-me">Other Ways to Reach Me<a class="headerlink" href="#other-ways-to-reach-me" title="Permanent link"></a></h2>
 <ul>
-<li>Add me to your <a href="https://www.linkedin.com/in/qurat12/">LinkedIn</a> Network</li>
-<li>Find me on <a href="https://twitter.com/imquratulainali">Twitter</a></li>
-<li>Find me on my <a href="https://www.cs.york.ac.uk/people/?group=enterprise&amp;username=quaa">University of York webpage</a></li>
-<li>My <a href="http://www.lowcomote.eu/esr/12/">Lowcomote</a> Identity</li>
-<li>Write me at my <a href="mailto:quratulain.ali@york.ac.uk">Email address</a></li>
+<li>📧 Email:  <a href="mailto:quratulain.ali@york.ac.uk">Write me</a></li>
+<li>💼 LinkedIn: <a href="https://www.linkedin.com/in/qurat12/">Qurat ul ain LinkedIn Profile</a> Network</li>
+<li>🐦 Twitter: <a href="https://twitter.com/imquratulainali">Twitter Profile</a></li>
+<li>🏫 University of York: <a href="https://www.cs.york.ac.uk/people/?group=enterprise&amp;username=quaa">University of York webpage</a></li>
+<li>👤 Lowcomote Identity: <a href="http://www.lowcomote.eu/esr/12/">Qurat ul ain Ali Lowcomote</a> </li>
+<li>📚 Google Scholar: <a href="https://scholar.google.com/citations?user=nuHfi68AAAAJ&amp;hl=en">Qurat ul ain Ali Profile</a></li>
 </ul>
+<p>I look forward to connecting with you!</p>
 
 
 
