@@ -487,30 +487,23 @@
 <p>I’d love to hear from you! Whether it’s a question, collaboration opportunity, or just a friendly hello, feel free to reach out.</p>
 <hr />
 <h2 id="send-me-a-message">Send Me a Message<a class="headerlink" href="#send-me-a-message" title="Permanent link"></a></h2>
-<div style="max-width:600px; margin:40px 0; background:#ffffff; padding:40px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1); font-family:Arial, sans-serif;">
+<div style="max-width:600px; margin:40px 0 40px 0; background: linear-gradient(to bottom right, #fdfbfb, #ebedee); padding:40px; border-radius:12px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); font-family:Arial, sans-serif; text-align:left;">
 
 <form action="https://formspree.io/f/xwpnpeew" method="POST">
 
-  <!-- Name Input -->
-  <div style="position:relative; margin-bottom:20px;">
-    <input type="text" id="name" name="name" required placeholder=" " style="width:100%; padding:16px 16px 16px 16px; border:1px solid #ccc; border-radius:10px; outline:none; transition:0.3s;"/>
-    <label for="name" style="position:absolute; left:16px; top:16px; color:#888; transition:0.3s; pointer-events:none;">Your Name</label>
-  </div>
+  <label for="name" style="font-weight:bold; font-size:16px;">Full Name:</label><br>
+  <input type="text" id="name" name="name" required placeholder="John Doe" style="width:100%;padding:14px;margin:12px 0;border:1px solid #ccc;border-radius:8px;transition:0.3s; outline:none;" 
+         onfocus="this.style.borderColor='#007acc';" onblur="this.style.borderColor='#ccc';"><br>
 
-  <!-- Email Input -->
-  <div style="position:relative; margin-bottom:20px;">
-    <input type="email" id="email" name="email" required placeholder=" " style="width:100%; padding:16px; border:1px solid #ccc; border-radius:10px; outline:none; transition:0.3s;"/>
-    <label for="email" style="position:absolute; left:16px; top:16px; color:#888; transition:0.3s; pointer-events:none;">Your Email</label>
-  </div>
+  <label for="email" style="font-weight:bold; font-size:16px;">Email:</label><br>
+  <input type="email" id="email" name="email" required placeholder="you@example.com" style="width:100%;padding:14px;margin:12px 0;border:1px solid #ccc;border-radius:8px;transition:0.3s; outline:none;" 
+         onfocus="this.style.borderColor='#007acc';" onblur="this.style.borderColor='#ccc';"><br>
 
-  <!-- Message Input -->
-  <div style="position:relative; margin-bottom:25px;">
-    <textarea id="message" name="message" rows="6" required placeholder=" " style="width:100%; padding:16px; border:1px solid #ccc; border-radius:10px; outline:none; transition:0.3s;"></textarea>
-    <label for="message" style="position:absolute; left:16px; top:16px; color:#888; transition:0.3s; pointer-events:none;">Your Message</label>
-  </div>
+  <label for="message" style="font-weight:bold; font-size:16px;">Message:</label><br>
+  <textarea id="message" name="message" rows="7" required placeholder="Type your message here..." style="width:100%;padding:14px;margin:12px 0;border:1px solid #ccc;border-radius:8px;transition:0.3s; outline:none;" 
+            onfocus="this.style.borderColor='#007acc';" onblur="this.style.borderColor='#ccc';"></textarea><br>
 
-  <!-- Submit Button -->
-  <button type="submit" style="width:100%; background-color:#007acc; color:white; padding:18px; border:none; border-radius:10px; cursor:pointer; font-size:16px; font-weight:bold; transition:0.3s; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+  <button type="submit" style="width:100%; background-color:#007acc;color:white;padding:16px;border:none;border-radius:8px;cursor:pointer;font-size:16px;font-weight:bold;transition:0.3s;">
     Send Message
   </button>
 </form>
@@ -518,23 +511,6 @@
 </div>
 
 <script>
-  // Floating labels effect
-  const inputs = document.querySelectorAll('input, textarea');
-  inputs.forEach(input => {
-    input.addEventListener('focus', () => {
-      input.nextElementSibling.style.top = '-10px';
-      input.nextElementSibling.style.fontSize = '12px';
-      input.nextElementSibling.style.color = '#007acc';
-    });
-    input.addEventListener('blur', () => {
-      if (input.value === '') {
-        input.nextElementSibling.style.top = '16px';
-        input.nextElementSibling.style.fontSize = '16px';
-        input.nextElementSibling.style.color = '#888';
-      }
-    });
-  });
-
   // Button hover effect
   const btn = document.querySelector('button[type="submit"]');
   btn.addEventListener('mouseover', () => btn.style.backgroundColor = '#005f99');
@@ -545,10 +521,9 @@
 <h2 id="other-ways-to-reach-me">Other Ways to Reach Me<a class="headerlink" href="#other-ways-to-reach-me" title="Permanent link"></a></h2>
 <ul>
 <li>📧 Email:  <a href="mailto:quratulain.ali@york.ac.uk">Write me</a></li>
-<li>💼 LinkedIn: <a href="https://www.linkedin.com/in/qurat12/">Qurat ul ain LinkedIn Profile</a> Network</li>
+<li>💼 LinkedIn: <a href="https://www.linkedin.com/in/quratulain-ali/">Qurat ul ain LinkedIn Profile</a></li>
 <li>🐦 Twitter: <a href="https://twitter.com/imquratulainali">Twitter Profile</a></li>
 <li>🏫 University of York: <a href="https://www.cs.york.ac.uk/people/?group=enterprise&amp;username=quaa">University of York webpage</a></li>
-<li>👤 Lowcomote Identity: <a href="http://www.lowcomote.eu/esr/12/">Qurat ul ain Ali Lowcomote</a> </li>
 <li>📚 Google Scholar: <a href="https://scholar.google.com/citations?user=nuHfi68AAAAJ&amp;hl=en">Qurat ul ain Ali Profile</a></li>
 </ul>
 <p>I look forward to connecting with you!</p>
