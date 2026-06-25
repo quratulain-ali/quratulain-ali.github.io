@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -16,13 +17,16 @@
 <!-- ── Navigation ── -->
 <nav>
   <span class="nav-logo">Qurat<span>.</span></span>
+  <button class="nav-hamburger" aria-label="Toggle menu" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#conferences">Talks</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about" onclick="document.querySelector('.nav-links').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open')">About</a></li>
+    <li><a href="#experience" onclick="document.querySelector('.nav-links').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open')">Experience</a></li>
+    <li><a href="#publications" onclick="document.querySelector('.nav-links').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open')">Publications</a></li>
+    <li><a href="#conferences" onclick="document.querySelector('.nav-links').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open')">Talks</a></li>
+    <li><a href="#education" onclick="document.querySelector('.nav-links').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open')">Education</a></li>
+    <li><a href="#contact" onclick="document.querySelector('.nav-links').classList.remove('open');document.querySelector('.nav-hamburger').classList.remove('open')">Contact</a></li>
   </ul>
 </nav>
 
@@ -37,6 +41,7 @@
       <div class="hero-actions">
         <a href="#publications" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Publications</a>
         <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Get in touch</a>
+        <a href="assets/cv.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Download CV</a>
       </div>
       <div class="hero-socials">
         <a href="https://www.linkedin.com/in/quratulain-ali/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -57,8 +62,8 @@
     <h2 class="section-title">Who I am</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>I am a <strong>Senior Software Engineer</strong> at <a href="https://www.rolls-royce.com" target="_blank">Rolls-Royce Plc.</a> with over 11 years of experience in software development, specialising in <strong>web-based model-driven engineering (MDE)</strong> tools.</p>
-        <p>My work focuses on building scalable, collaborative, and user-friendly modelling platforms using technologies such as <a href="https://eclipse.dev/glsp/" target="_blank">Eclipse GLSP</a> and <a href="https://eclipse.dev/sirius/sirius-web.html" target="_blank">Sirius Web</a>.</p>
+        <p>I am a <strong>Senior Software Engineer</strong> at <a href="https://www.rolls-royce.com" target="_blank">Rolls-Royce Plc.</a> with over 11 years of experience spanning software engineering research and industry. I specialise in <strong>model-driven engineering (MDE)</strong>, software architecture, and delivering scalable solutions for complex industrial domains.</p>
+        <p>My work includes building collaborative modelling platforms using technologies such as <a href="https://eclipse.dev/glsp/" target="_blank">Eclipse GLSP</a> and <a href="https://eclipse.dev/sirius/sirius-web.html" target="_blank">Sirius Web</a>, as well as leading end-to-end software delivery in cross-disciplinary teams.</p>
         <p>Previously I was a <a href="https://www.ktp-uk.org/graduates/" target="_blank">KTP Research Associate</a> jointly between Rolls-Royce and the <a href="https://www.york.ac.uk" target="_blank">University of York</a>, and before that a <a href="https://www.cs.york.ac.uk/people/?group=ase&username=quaa" target="_blank">PhD researcher</a> in the EU-funded <a href="https://lowcomote.eu/esr/12/" target="_blank">Lowcomote Training Network</a>.</p>
       </div>
       <div>
@@ -102,12 +107,13 @@
         <div class="timeline-content">
           <h3>Senior Software Engineer</h3>
           <div class="org">Rolls-Royce Plc.</div>
+          <p>Designing and delivering high-integrity software solutions for complex engineering domains, leading technical initiatives across cross-functional teams.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">Oct 2022 – Sep 2025</div>
         <div class="timeline-content">
-          <h3>Research Associate <span style="font-size:0.78rem;background:rgba(108,99,255,0.15);color:var(--accent2);border:1px solid rgba(108,99,255,0.3);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:6px;vertical-align:middle;">KTP · Graded Outstanding</span></h3>
+          <h3>Research Associate <span style="font-size:0.78rem;background:rgba(234,179,8,0.15);color:#fbbf24;border:1px solid rgba(234,179,8,0.35);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:6px;vertical-align:middle;">KTP · Graded Outstanding</span></h3>
           <div class="org">University of York &amp; Rolls-Royce Plc.</div>
           <p>Led development of a web-based model engineering environment that improved efficiency and usability in complex engineering workflows.</p>
         </div>
@@ -125,6 +131,7 @@
         <div class="timeline-content">
           <h3>Assistant Manager</h3>
           <div class="org">Government of Pakistan</div>
+          <p>Managed IT systems and digital processes, overseeing technical operations and cross-departmental coordination.</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -132,6 +139,7 @@
         <div class="timeline-content">
           <h3>Lecturer</h3>
           <div class="org">University of Gujrat</div>
+          <p>Taught undergraduate modules in computer engineering, including programming, data structures, and digital systems.</p>
         </div>
       </div>
     </div>
@@ -184,7 +192,7 @@
         <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/204204/1/Qurat_SLE_2022_paper.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
       </div>
 
-      <div class="pub-card">
+      <div class="pub-card" style="border-color: rgba(234,179,8,0.4);">
         <div class="pub-year">2021</div>
         <h3><a href="https://ieeexplore.ieee.org/document/9643777" target="_blank">Identification and Optimisation of Type-Level Model Queries</a> <span style="font-size:0.78rem;background:rgba(234,179,8,0.15);color:#fbbf24;border:1px solid rgba(234,179,8,0.35);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:4px;vertical-align:middle;">★ Best Paper</span></h3>
         <div class="pub-venue">SAM 2021 co-located with MODELS</div>
@@ -317,13 +325,15 @@
         <div>
           <h3>PhD Software Engineering</h3>
           <div class="inst">University of York, UK</div>
+          <div class="edu-desc">Thesis: Optimisation of Model Management Programs Using Automated Program Rewriting, part of the EU-funded Lowcomote Training Network.</div>
         </div>
         <div class="years">Sep 2019 – Dec 2023</div>
       </div>
       <div class="edu-card">
         <div>
-          <h3>MSc Computer Engineering</h3>
+          <h3>MSc Computer Engineering <span style="font-size:0.78rem;background:rgba(34,197,94,0.12);color:#4ade80;border:1px solid rgba(34,197,94,0.3);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:6px;vertical-align:middle;">Distinction</span></h3>
           <div class="inst">UET Taxila, Pakistan</div>
+          <div class="edu-desc">Thesis focused on spatio-temporal feature analysis for human–vehicle interaction recognition.</div>
         </div>
         <div class="years">Sep 2014 – Aug 2018</div>
       </div>
@@ -331,6 +341,7 @@
         <div>
           <h3>BSc (Hons.) Computer Engineering <span style="font-size:0.78rem;background:rgba(148,163,184,0.15);color:#94a3b8;border:1px solid rgba(148,163,184,0.35);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:6px;vertical-align:middle;">🥈 Silver Medalist</span></h3>
           <div class="inst">UET Taxila, Pakistan</div>
+          <div class="edu-desc">Graduated with distinction, ranking 2nd in the department across the graduating cohort.</div>
         </div>
         <div class="years">Nov 2010 – Jul 2014</div>
       </div>
@@ -345,7 +356,7 @@
     <h2 class="section-title">Contact</h2>
     <div class="contact-grid">
       <div class="contact-intro">
-        <p>I'm open to conversations about model-driven engineering, web-based modelling tools, research collaborations, or speaking opportunities.</p>
+        <p>I'm open to conversations about model-driven engineering, software architecture, research collaborations, speaking opportunities, or anything at the intersection of research and industry engineering.</p>
         <div class="contact-links">
           <a href="mailto:quratulain.ali@york.ac.uk" class="contact-link">
             <span class="icon"><i class="fa-solid fa-envelope"></i></span> quratulain.ali@york.ac.uk
@@ -387,7 +398,12 @@
 
 <!-- ── Footer ── -->
 <footer>
-  <p>© 2026 Qurat ul ain Ali · Built with HTML &amp; CSS · <a href="https://github.com/quratulain-ali" target="_blank">quratulain-ali</a></p>
+  <p>© 2026 Qurat ul ain Ali &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/quratulain-ali/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> &nbsp;
+    <a href="https://github.com/quratulain-ali" target="_blank"><i class="fa-brands fa-github"></i></a> &nbsp;
+    <a href="https://scholar.google.com/citations?user=nuHfi68AAAAJ&hl=en" target="_blank"><i class="fa-solid fa-graduation-cap"></i></a> &nbsp;
+    <a href="mailto:quratulain.ali@york.ac.uk"><i class="fa-solid fa-envelope"></i></a>
+  </p>
 </footer>
 
 </body>

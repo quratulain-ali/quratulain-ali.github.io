@@ -68,7 +68,7 @@ nav {
 
 /* ── Hero ── */
 #hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,7 +369,8 @@ section { padding: 5rem 2rem; }
 }
 
 .edu-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
-.edu-card .inst { color: var(--accent2); font-size: 0.9rem; }
+.edu-card .inst { color: var(--accent2); font-size: 0.9rem; margin-bottom: 0.35rem; }
+.edu-card .edu-desc { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.4rem; line-height: 1.5; }
 .edu-card .years { font-size: 0.82rem; color: var(--text-muted); font-family: var(--mono); white-space: nowrap; padding-top: 0.2rem; }
 
 /* ── Contact ── */
@@ -419,14 +420,38 @@ section { padding: 5rem 2rem; }
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
 
+/* ── Hamburger ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.25s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ── Footer ── */
 footer {
   text-align: center;
   padding: 2rem;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   border-top: 1px solid var(--border);
 }
+footer a { color: var(--text-muted); margin: 0 2px; transition: color 0.2s; }
+footer a:hover { color: var(--accent2); }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
@@ -437,6 +462,20 @@ footer {
   .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
   .timeline-item { grid-template-columns: 1fr; gap: 0.25rem; }
   .edu-card { flex-direction: column; }
-  nav { padding: 1rem 1.5rem; }
-  .nav-links { gap: 1.25rem; }
+
+  .nav-hamburger { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(15,17,23,0.97);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 1rem 2rem 1.5rem;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+  nav { padding: 1rem 1.5rem; position: relative; }
 }
