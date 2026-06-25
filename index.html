@@ -41,7 +41,7 @@
       <div class="hero-actions">
         <a href="#publications" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Publications</a>
         <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Get in touch</a>
-        <a href="assets/cv.pdf" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Download CV</a>
+        <a href="assets/cv.pdf" class="btn btn-outline btn-cv" download><i class="fa-solid fa-download"></i> Download CV</a>
       </div>
       <div class="hero-socials">
         <a href="https://www.linkedin.com/in/quratulain-ali/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -55,6 +55,14 @@
   </div>
 </section>
 
+<!-- ── Stats bar ── -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num">11+</span><span class="stat-label">Years experience</span></div>
+  <div class="stat"><span class="stat-num">10</span><span class="stat-label">Publications</span></div>
+  <div class="stat"><span class="stat-num">32</span><span class="stat-label">Citations</span></div>
+  <div class="stat"><span class="stat-num">21</span><span class="stat-label">Conferences</span></div>
+</div>
+
 <!-- ── About ── -->
 <section id="about">
   <div class="container">
@@ -65,6 +73,7 @@
         <p>I am a <strong>Senior Software Engineer</strong> at <a href="https://www.rolls-royce.com" target="_blank">Rolls-Royce Plc.</a> with over 11 years of experience spanning software engineering research and industry. I specialise in <strong>model-driven engineering (MDE)</strong>, software architecture, and delivering scalable solutions for complex industrial domains.</p>
         <p>My work includes building collaborative modelling platforms using technologies such as <a href="https://eclipse.dev/glsp/" target="_blank">Eclipse GLSP</a> and <a href="https://eclipse.dev/sirius/sirius-web.html" target="_blank">Sirius Web</a>, as well as leading end-to-end software delivery in cross-disciplinary teams.</p>
         <p>Previously I was a <a href="https://www.ktp-uk.org/graduates/" target="_blank">KTP Research Associate</a> jointly between Rolls-Royce and the <a href="https://www.york.ac.uk" target="_blank">University of York</a>, and before that a <a href="https://www.cs.york.ac.uk/people/?group=ase&username=quaa" target="_blank">PhD researcher</a> in the EU-funded <a href="https://lowcomote.eu/esr/12/" target="_blank">Lowcomote Training Network</a>.</p>
+        <p style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);"><strong style="color:var(--accent2);">Currently:</strong> Focused on high-integrity model-based tooling for complex engineering systems, Agile delivery practices, and bridging the gap between academic research and production-grade software.</p>
       </div>
       <div>
         <p style="font-size:0.85rem;font-weight:600;color:var(--text-muted);margin-bottom:0.75rem;letter-spacing:0.05em;text-transform:uppercase;">Core skills</p>
@@ -131,7 +140,7 @@
         <div class="timeline-content">
           <h3>Assistant Manager</h3>
           <div class="org">Government of Pakistan</div>
-          <p>Managed IT systems and digital processes, overseeing technical operations and cross-departmental coordination.</p>
+          <p>Managed IT systems and digital processes, overseeing technical operations and cross-departmental coordination. Supervised a team of 10+ technical staff and drove process automation initiatives.</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -139,7 +148,7 @@
         <div class="timeline-content">
           <h3>Lecturer</h3>
           <div class="org">University of Gujrat</div>
-          <p>Taught undergraduate modules in computer engineering, including programming, data structures, and digital systems.</p>
+          <p>Taught undergraduate modules in computer engineering, including programming, data structures, and digital systems to 100+ students per cohort. Developed course materials and supervised final-year projects.</p>
         </div>
       </div>
     </div>
@@ -153,82 +162,86 @@
     <h2 class="section-title">Publications</h2>
     <div class="pub-list">
 
-      <div class="pub-card">
-        <div class="pub-year">2024</div>
-        <h3><a href="https://dl.acm.org/doi/abs/10.1145/3640310.3674094" target="_blank">Advancing Domain-Specific High-Integrity Model-Based Tools: Insights and Future Pathways</a></h3>
-        <div class="pub-venue">ACM/IEEE MODELS 2024, Linz, Austria</div>
-        <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/217661/1/MODELS_2024.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+      <div class="pub-year-group">
+        <h3 class="pub-year-heading">2024</h3>
+        <div class="pub-card">
+          <h3><a href="https://dl.acm.org/doi/abs/10.1145/3640310.3674094" target="_blank">Advancing Domain-Specific High-Integrity Model-Based Tools: Insights and Future Pathways</a></h3>
+          <div class="pub-venue">ACM/IEEE MODELS 2024, Linz, Austria</div>
+          <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/217661/1/MODELS_2024.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
+        <div class="pub-card">
+          <h3>Semi-automated migration of domain-specific graphical editors to the Web</h3>
+          <div class="pub-venue">High Integrity Software Conference 2024</div>
+          <div class="pub-badges"><span class="badge badge-poster">Poster</span></div>
+        </div>
       </div>
 
-      <div class="pub-card">
-        <div class="pub-year">2024</div>
-        <h3>Semi-automated migration of domain-specific graphical editors to the Web</h3>
-        <div class="pub-venue">High Integrity Software Conference 2024</div>
-        <div class="pub-badges"><span class="badge badge-poster">Poster</span></div>
+      <div class="pub-year-group">
+        <h3 class="pub-year-heading">2023</h3>
+        <div class="pub-card">
+          <h3><a href="https://etheses.whiterose.ac.uk/34847/" target="_blank">Optimisation of Model Management Programs Using Automated Program Rewriting</a></h3>
+          <div class="pub-venue">PhD Thesis, University of York</div>
+          <div class="pub-badges"><span class="badge badge-thesis">Thesis</span></div>
+          <div class="pub-links"><a href="https://etheses.whiterose.ac.uk/34847/1/Qurat_Thesis.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
+        <div class="pub-card">
+          <h3><a href="https://dl.acm.org/doi/10.1145/3623476.3623519" target="_blank">Towards Efficient Model Comparison using Automated Program Rewriting</a></h3>
+          <div class="pub-venue">SLE 2023, ACM SIGPLAN</div>
+          <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/204203/1/Qurat_SLE_2023_paper.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
       </div>
 
-      <div class="pub-card">
-        <div class="pub-year">2023</div>
-        <h3><a href="https://etheses.whiterose.ac.uk/34847/" target="_blank">Optimisation of Model Management Programs Using Automated Program Rewriting</a></h3>
-        <div class="pub-venue">PhD Thesis, University of York</div>
-        <div class="pub-badges"><span class="badge badge-thesis">Thesis</span></div>
-        <div class="pub-links"><a href="https://etheses.whiterose.ac.uk/34847/1/Qurat_Thesis.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+      <div class="pub-year-group">
+        <h3 class="pub-year-heading">2022</h3>
+        <div class="pub-card">
+          <h3><a href="https://dl.acm.org/doi/10.1145/3567512.3567521" target="_blank">Selective Traceability for Rule-Based Model-to-Model Transformations</a></h3>
+          <div class="pub-venue">SLE 2022, ACM SIGPLAN</div>
+          <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/204204/1/Qurat_SLE_2022_paper.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
       </div>
 
-      <div class="pub-card">
-        <div class="pub-year">2023</div>
-        <h3><a href="https://dl.acm.org/doi/10.1145/3623476.3623519" target="_blank">Towards Efficient Model Comparison using Automated Program Rewriting</a></h3>
-        <div class="pub-venue">SLE 2023, ACM SIGPLAN</div>
-        <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/204203/1/Qurat_SLE_2023_paper.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+      <div class="pub-year-group">
+        <h3 class="pub-year-heading">2021</h3>
+        <div class="pub-card" style="border-color: rgba(234,179,8,0.4);">
+          <h3><a href="https://ieeexplore.ieee.org/document/9643777" target="_blank">Identification and Optimisation of Type-Level Model Queries</a> <span style="font-size:0.78rem;background:rgba(234,179,8,0.15);color:#fbbf24;border:1px solid rgba(234,179,8,0.35);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:4px;vertical-align:middle;">★ Best Paper</span></h3>
+          <div class="pub-venue">SAM 2021 co-located with MODELS</div>
+          <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/180260/1/Identificiation_And_Optimisation_of_Type_Level_Model_Queries.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
+        <div class="pub-card">
+          <h3><a href="https://ieeexplore.ieee.org/document/9643677" target="_blank">Heterogeneous Model Query Optimisation</a></h3>
+          <div class="pub-venue">Doctoral Symposium, MODELS 2021</div>
+          <div class="pub-badges"><span class="badge badge-symposium">Doctoral Symposium</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/179962/1/Heterogeneous_Model_Query_Optimisation.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
+        <div class="pub-card">
+          <h3><a href="https://ieeexplore.ieee.org/document/9643785" target="_blank">Towards Scalable Validation of Low-Code System Models: Mapping EVL to Viatra Patterns</a></h3>
+          <div class="pub-venue">2nd Low-Code Workshop, MODELS 2021</div>
+          <div class="pub-badges"><span class="badge badge-workshop">Workshop</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/179960/1/Towards_Scalable_Validation_of_Low_Code_System_Models_Mapping_EVL_to_VIATRA_Patterns.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
       </div>
 
-      <div class="pub-card">
-        <div class="pub-year">2022</div>
-        <h3><a href="https://dl.acm.org/doi/10.1145/3567512.3567521" target="_blank">Selective Traceability for Rule-Based Model-to-Model Transformations</a></h3>
-        <div class="pub-venue">SLE 2022, ACM SIGPLAN</div>
-        <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/204204/1/Qurat_SLE_2022_paper.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+      <div class="pub-year-group">
+        <h3 class="pub-year-heading">2020</h3>
+        <div class="pub-card">
+          <h3><a href="https://dl.acm.org/doi/abs/10.1145/3417990.3420207" target="_blank">Efficiently Querying Large-Scale Heterogeneous Models</a></h3>
+          <div class="pub-venue">1st Low-Code Workshop, MODELS 2020</div>
+          <div class="pub-badges"><span class="badge badge-workshop">Workshop</span></div>
+          <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/168619/1/Quratulain_Lowcode.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
+        </div>
       </div>
 
-      <div class="pub-card" style="border-color: rgba(234,179,8,0.4);">
-        <div class="pub-year">2021</div>
-        <h3><a href="https://ieeexplore.ieee.org/document/9643777" target="_blank">Identification and Optimisation of Type-Level Model Queries</a> <span style="font-size:0.78rem;background:rgba(234,179,8,0.15);color:#fbbf24;border:1px solid rgba(234,179,8,0.35);border-radius:999px;padding:2px 8px;font-weight:600;margin-left:4px;vertical-align:middle;">★ Best Paper</span></h3>
-        <div class="pub-venue">SAM 2021 co-located with MODELS</div>
-        <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/180260/1/Identificiation_And_Optimisation_of_Type_Level_Model_Queries.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2021</div>
-        <h3><a href="https://ieeexplore.ieee.org/document/9643677" target="_blank">Heterogeneous Model Query Optimisation</a></h3>
-        <div class="pub-venue">Doctoral Symposium, MODELS 2021</div>
-        <div class="pub-badges"><span class="badge badge-symposium">Doctoral Symposium</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/179962/1/Heterogeneous_Model_Query_Optimisation.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2021</div>
-        <h3><a href="https://ieeexplore.ieee.org/document/9643785" target="_blank">Towards Scalable Validation of Low-Code System Models: Mapping EVL to Viatra Patterns</a></h3>
-        <div class="pub-venue">2nd Low-Code Workshop, MODELS 2021</div>
-        <div class="pub-badges"><span class="badge badge-workshop">Workshop</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/179960/1/Towards_Scalable_Validation_of_Low_Code_System_Models_Mapping_EVL_to_VIATRA_Patterns.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2020</div>
-        <h3><a href="https://dl.acm.org/doi/abs/10.1145/3417990.3420207" target="_blank">Efficiently Querying Large-Scale Heterogeneous Models</a></h3>
-        <div class="pub-venue">1st Low-Code Workshop, MODELS 2020</div>
-        <div class="pub-badges"><span class="badge badge-workshop">Workshop</span></div>
-        <div class="pub-links"><a href="https://eprints.whiterose.ac.uk/168619/1/Quratulain_Lowcode.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i> PDF</a></div>
-      </div>
-
-      <div class="pub-card">
-        <div class="pub-year">2018</div>
-        <h3><a href="https://ieeexplore.ieee.org/abstract/document/8650232" target="_blank">Role of Spatio-Temporal Feature Position in Recognition of Human Vehicle Interaction</a></h3>
-        <div class="pub-venue">Tencon 2018</div>
-        <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
+      <div class="pub-year-group">
+        <h3 class="pub-year-heading">2018</h3>
+        <div class="pub-card">
+          <h3><a href="https://ieeexplore.ieee.org/abstract/document/8650232" target="_blank">Role of Spatio-Temporal Feature Position in Recognition of Human Vehicle Interaction</a></h3>
+          <div class="pub-venue">Tencon 2018</div>
+          <div class="pub-badges"><span class="badge badge-conf">Conference</span></div>
+        </div>
       </div>
 
     </div>
@@ -396,6 +409,11 @@
   </div>
 </section>
 
+<!-- ── Back to top ── -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
 <!-- ── Footer ── -->
 <footer>
   <p>© 2026 Qurat ul ain Ali &nbsp;·&nbsp;
@@ -406,5 +424,26 @@
   </p>
 </footer>
 
+<script>
+// Back to top visibility
+const btt = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  btt.classList.toggle('visible', window.scrollY > 400);
+});
+
+// Scrollspy — highlight active nav link
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+sections.forEach(s => obs.observe(s));
+</script>
 </body>
 </html>
